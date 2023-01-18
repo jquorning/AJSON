@@ -1,0 +1,10 @@
+name = "qjson"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Jesper Quorning"]
+maintainers = ["Jesper Quorning <jesper.quorning@gmail.com>"]
+maintainers-logins = ["jquorning"]
+licenses = "MIT"
+website = ""
+tags = ["ada", "json"]
