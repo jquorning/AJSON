@@ -1,14 +1,14 @@
-with "config/qjson_config.gpr";
+with "config/ajson_config.gpr";
 
-project Qjson
+project AJSON
 is
-   for Library_Name use "qjson";
+   for Library_Name use "ajson";
 
    for Library_Version
-   use Project'Library_Name & ".so." & Qjson_Config.Crate_Version;
+   use Project'Library_Name & ".so." & AJSON_Config.Crate_Version;
 
    for Source_Dirs use ("source/", "config/");
-   for Object_Dir  use ".object/" & Qjson_Config.Build_Profile;
+   for Object_Dir  use ".object/" & AJSON_Config.Build_Profile;
    for Library_Dir use "library";
 
    type Library_Type_Type is ("relocatable", "static", "static-pic");
@@ -20,7 +20,7 @@ is
    package Compiler
    is
       for Default_Switches ("Ada")
-      use Qjson_Config.Ada_Compiler_Switches;
+      use AJSON_Config.Ada_Compiler_Switches;
 
    end Compiler;
 
@@ -37,4 +37,4 @@ is
 
    end Install;
 
-end Qjson;
+end AJSON;
